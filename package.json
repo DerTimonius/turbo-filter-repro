@@ -2,7 +2,9 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev",
+    "dev": "echo \"hello world\"",
+    "start": "turbo run dev --filter=!docs",
+    "start.docs": "turbo run dev --filter=docs",
     "lint": "turbo run lint",
     "format": "prettier --write ."
   },
